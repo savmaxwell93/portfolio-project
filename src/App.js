@@ -3,6 +3,7 @@ import { Route, Routes, NavLink } from 'react-router-dom';
 
 import './App.css';
 
+import Home from './components/Home';
 import About from './components/About';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
@@ -24,7 +25,7 @@ function App() {
             Resume
           </NavLink>
           <NavLink className="link" to ='/projects'>
-            Resume
+            Projects
           </NavLink>
           <NavLink className="link" to ='/activities'>
             Activities
@@ -33,11 +34,9 @@ function App() {
             Contact
           </NavLink>
         </div>
-        <h1>Hi there! I'm Savannah Maxwell.</h1>
-        <p>Full stack web development student. Rock climber. Backpacker. Gamer. Certified Veterinary Technician</p>
       </header>
       <Routes>
-        <Route exact path='/'/>
+        <Route exact path='/' element={<Home/>}/>
         <Route exact path='/about' element={<About/>}/>
         <Route exact path='/resume' element={<Resume/>}/>
         <Route exact path='/projects' element={<Projects/>}/>

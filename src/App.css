@@ -13,6 +13,12 @@
   }
 }
 
+.navContainer {
+  display: flex;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+}
+
 .home-container {
   background-color: #282c34;
   min-height: 100vh;
@@ -41,8 +47,17 @@
 }
 
 .link {
-  padding: 2%;
+  font-weight: 300;
+  margin-left: 30px;
+  margin-right: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
 }
+
+.link:hover {text-decoration: underline;}
 
 .navContainer {
   margin-top: 3%;

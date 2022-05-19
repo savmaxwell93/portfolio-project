@@ -58,9 +58,3 @@
 }
 
 .link:hover {text-decoration: underline;}
-
-.navContainer {
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-}
